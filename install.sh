@@ -31,6 +31,8 @@ fi
 echo "Extracting archive into $TARGET_DIR..."
 tar -xzvf "$ARCHIVE" -C "$TARGET_DIR" || { echo "Extraction failed. The archive might be corrupt." >&2; exit 1; }
 
+cd $PROVIDER_DIR
+
 # Execute the python.
 echo "Evaluating your hardware"
-"${VENV_DIR}/python3" "${PROVIDER_DIR}/providerStuff.py"
+"${VENV_DIR}/python3" "$PROVIDER_DIR/providerStuff.py"
