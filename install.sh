@@ -10,12 +10,12 @@ for cmd in curl tar; do
 done
 
 # Define variables.
-URL="https://github.com/aychocho/gpuProvider/archive/refs/tags/eigenGames2.tar.gz"
-ARCHIVE="gpuProvider-eigenGames2.tar.gz"
-EXPECTED_DIR="gpuProvider-eigenGames2"  # Expected folder name after extraction.
+URL="https://github.com/aychocho/gpuProvider/archive/refs/tags/eigenGames3.tar.gz"
+ARCHIVE="gpuProvider-eigenGames3.tar.gz"
+EXPECTED_DIR="gpuProvider-eigenGames3"  # Expected folder name after extraction.
 TARGET_DIR="/home/wallaby"              # extract directory
-PROVIDER_DIR="${TARGET_DIR}/gpuProvider-eigenGames2/gpuProvider"  #where providerStuff.py lives
-VENV_DIR="${TARGET_DIR}/gpuProvider-eigenGames2/gpuProviderVenv/src/bin" #where venv stuff lives
+PROVIDER_DIR="${TARGET_DIR}/gpuProvider-eigenGames3/gpuProvider"  #where providerStuff.py lives
+VENV_DIR="${TARGET_DIR}/gpuProvider-eigenGames3/gpuProviderVenv/src/bin" #where venv stuff lives
 
 #mkdir
 mkdir -p /home/wallaby
